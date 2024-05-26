@@ -2,6 +2,7 @@
 
 $color-website-backgroud: #fff;
 $color-text-light: #fff;
+$color-grey: #f2f2f2;
 $color-text-dark: #000;
 $color-blue: #3366cc;
 $color-blue-monochromatic: #316be1;
@@ -56,4 +57,23 @@ body {
 .sticky+.content {
     padding-top: 80px;
     /* Adjust padding-top to match the new navbar height */
+}
+
+// info
+
+#info {
+    background-color: $color-grey;
+    color: $color-text-dark;
+    text-align: center;
+    padding: 14px 16px;
+    // font-size: 12px;
+    font-size: 80%;
+    /* Match the height of the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .info {
+        width: 80%;
+    }
 }
