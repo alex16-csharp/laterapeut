@@ -1,3 +1,4 @@
+// navbar
 window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("navbar");
@@ -9,4 +10,15 @@ function myFunction() {
     } else {
         navbar.classList.remove("sticky");
     }
+}
+
+// sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
 }

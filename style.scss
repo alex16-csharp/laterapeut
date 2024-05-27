@@ -9,6 +9,7 @@ $color-blue-monochromatic: #316be1;
 $color-dark-blue: #6147e4;
 $color-blue-complementary: #e4b047;
 
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -66,14 +67,115 @@ body {
     color: $color-text-dark;
     text-align: center;
     padding: 14px 16px;
-    // font-size: 12px;
-    font-size: 80%;
+    font-size: 70%;
+    padding: 1.2em;
+    margin: auto;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    word-spacing: 3px;
     /* Match the height of the navbar */
     display: flex;
     justify-content: center;
     align-items: center;
 
     .info {
-        width: 80%;
+        max-width: 80em;
+        // width: 80%;
+    }
+}
+
+/* on Mobile */
+@media screen and (max-width: 800px) {
+    #info {
+        padding: 14px 16px;
+        font-size: 100%;
+        padding: 1.2em;
+        margin: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: 0.25em;
+
+        .info {
+            max-width: 80em;
+        }
+    }
+}
+
+// sidebar
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 17px;
+    /* Match the font size with the navigation bar links */
+    cursor: pointer;
+    background-color: $color-blue;
+    /* Use the same blue color as the navigation bar */
+    color: $color-text-light;
+    /* Use the same white color as the navigation bar links */
+    padding: 14px 16px;
+    /* Match the padding with the navigation bar links */
+    border: none;
+    height: 80px;
+    /* Match the height with the navigation bar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    /* Make the width the same as the viewport width */
+}
+
+
+.openbtn:hover {
+    background-color: $color-blue-monochromatic;
+    /* Use the same hover color as the navigation bar links */
+    color: $color-text-light;
+    /* Use the same white color as the navigation bar links */
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
     }
 }
