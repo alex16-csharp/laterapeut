@@ -166,4 +166,20 @@ body {
   #mobile-sidebar {
     display: none;
   }
+}
+/* Set the default styles for the desktop navbar to be hidden */
+#desktop-navbar {
+  display: none;
+}
+
+/* Use a media query to show the desktop navbar only when the screen width is greater than or equal to 768px */
+@media (min-width: 768px) {
+  /* Hide the mobile sidebar */
+  #mobile-sidebar {
+    display: none;
+  }
+  /* Show the desktop navbar */
+  .desktop-view #desktop-navbar {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

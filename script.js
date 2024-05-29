@@ -22,3 +22,22 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+
+// Get the body element
+const body = document.querySelector('body');
+
+// Set the initial view based on the screen width
+if (window.innerWidth >= 768) {
+    body.classList.add('desktop-view');
+} else {
+    body.classList.remove('desktop-view');
+}
+
+// Add an event listener to update the view when the screen is resized
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        body.classList.add('desktop-view');
+    } else {
+        body.classList.remove('desktop-view');
+    }
+});
