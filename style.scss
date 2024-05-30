@@ -265,12 +265,13 @@ body {
     }
 }
 
-.column-right {
+.column-small {
     float: left;
     width: 20%;
     padding: 15px;
     border: 1.5px solid $color-dark-grey;
     padding: 10px;
+    margin-bottom: 3.5rem;
 
     a {
         text-decoration: none;
@@ -279,7 +280,7 @@ body {
 }
 
 
-.column-left {
+.column-big {
     float: left;
     width: 70%;
     padding: 15px;
@@ -291,17 +292,21 @@ body {
         width: 1em;
         margin-left: 1em;
     }
+}
 
+.column-big a {
+    text-decoration: none; // remove underline
+    color: $color-blue; // set text color to blue
 }
 
 @media screen and (max-width: 600px) {
-    .column-left h3::before {
+    .column-big h3::before {
         margin-left: 0;
     }
 }
 
 
-.left-navigation-block-border {
+.big-navigation-block-border {
     border-bottom: 1px solid $color-dark-grey;
     width: 60%;
     padding-bottom: 10px;
@@ -321,31 +326,35 @@ body {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
-    .column-right {
+    .column-small {
         width: 100%;
+        margin-bottom: 2rem;
     }
 
-    .column-left {
+    .column-big {
         width: 100%;
     }
 }
 
-.column-right-reasons-to-see-psychologist p::before {
+.bulletpoints p::before {
     content: "\2022";
     color: $color-blue-complementary;
     display: inline-block;
-    // width: 1em;
-    // margin-left: 1em;
 }
 
 @media screen and (max-width: 600px) {
-    .column-right-reasons-to-see-psychologist p::before {
+    .bulletpoints p::before {
         margin-left: 0;
     }
 }
 
 // hyperlink navbar fix
 #depresia {
-    padding-top: 70px;
-    scroll-margin-top: 70px;
+    // padding-top: 70px;
+    scroll-margin-top: 100px;
+}
+
+#psihoterapia-aid {
+    // padding-top: 70px;
+    scroll-margin-top: 100px;
 }
