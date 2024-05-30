@@ -1,4 +1,5 @@
 body {
+  background-color: #F8F8F8;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,7 +19,7 @@ body {
 
 #navbar a {
   display: block;
-  color: #fff;
+  color: #F8F8F8;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -29,7 +30,7 @@ body {
 
 #navbar a:hover {
   background-color: #316be1;
-  color: #fff;
+  color: #F8F8F8;
 }
 
 .content {
@@ -89,7 +90,6 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -98,8 +98,6 @@ body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
   display: block;
   transition: 0.3s;
 }
@@ -112,17 +110,16 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
   margin-left: 50px;
 }
 
 .openbtn {
-  font-size: 17px;
+  font-size: 1.3em;
   /* Match the font size with the navigation bar links */
   cursor: pointer;
   background-color: #3366cc;
   /* Use the same blue color as the navigation bar */
-  color: #fff;
+  color: #F8F8F8;
   /* Use the same white color as the navigation bar links */
   padding: 14px 16px;
   /* Match the padding with the navigation bar links */
@@ -140,7 +137,7 @@ body {
 .openbtn:hover {
   background-color: #316be1;
   /* Use the same hover color as the navigation bar links */
-  color: #fff;
+  color: #F8F8F8;
   /* Use the same white color as the navigation bar links */
 }
 
@@ -148,6 +145,7 @@ body {
   transition: margin-left 0.5s;
   background-color: #f2f2f2;
   color: #000;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 #main p {
   font-size: 1.1em;
@@ -193,7 +191,7 @@ body {
 /* Style the sidebar */
 #mySidebar {
   background-color: #3366cc;
-  color: #fff;
+  color: #F8F8F8;
 }
 #mySidebar hr {
   width: 80%;
@@ -203,15 +201,19 @@ body {
   display: block;
   margin: 10px auto;
 }
+#mySidebar .closebtn {
+  font-size: 2.5em;
+  /* Add this line to increase the font size */
+}
 
 /* Style the links inside the sidebar */
 #mySidebar a {
-  color: #fff;
-  font-size: 1.1em;
+  color: #F8F8F8;
+  font-size: 1.3em;
 }
 
 /* Style the links inside the sidebar on hover */
 #mySidebar a:hover {
   background-color: #316be1;
-  color: #fff;
+  color: #F8F8F8;
 }/*# sourceMappingURL=style.css.map */
