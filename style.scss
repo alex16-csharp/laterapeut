@@ -1,7 +1,7 @@
 // colour variables 
 
-$color-website-backgroud: #F8F8F8;
-$color-text-light: #F8F8F8;
+$color-website-backgroud: #fff;
+$color-text-light: #fff;
 $color-grey: #f2f2f2;
 $color-text-dark: #000;
 $color-blue: #3366cc;
@@ -253,4 +253,13 @@ body {
 #mySidebar a:hover {
     background-color: $color-blue-monochromatic;
     color: $color-text-light;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $color-website-backgroud;
+        /* or any other light color you prefer */
+        color: $color-text-dark;
+        /* or any other dark color you prefer */
+    }
 }

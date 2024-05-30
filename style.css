@@ -1,5 +1,5 @@
 body {
-  background-color: #F8F8F8;
+  background-color: #fff;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 
 #navbar a {
   display: block;
-  color: #F8F8F8;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -30,7 +30,7 @@ body {
 
 #navbar a:hover {
   background-color: #316be1;
-  color: #F8F8F8;
+  color: #fff;
 }
 
 .content {
@@ -119,7 +119,7 @@ body {
   cursor: pointer;
   background-color: #3366cc;
   /* Use the same blue color as the navigation bar */
-  color: #F8F8F8;
+  color: #fff;
   /* Use the same white color as the navigation bar links */
   padding: 14px 16px;
   /* Match the padding with the navigation bar links */
@@ -137,7 +137,7 @@ body {
 .openbtn:hover {
   background-color: #316be1;
   /* Use the same hover color as the navigation bar links */
-  color: #F8F8F8;
+  color: #fff;
   /* Use the same white color as the navigation bar links */
 }
 
@@ -191,7 +191,7 @@ body {
 /* Style the sidebar */
 #mySidebar {
   background-color: #3366cc;
-  color: #F8F8F8;
+  color: #fff;
 }
 #mySidebar hr {
   width: 80%;
@@ -208,12 +208,21 @@ body {
 
 /* Style the links inside the sidebar */
 #mySidebar a {
-  color: #F8F8F8;
+  color: #fff;
   font-size: 1.3em;
 }
 
 /* Style the links inside the sidebar on hover */
 #mySidebar a:hover {
   background-color: #316be1;
-  color: #F8F8F8;
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #fff;
+    /* or any other light color you prefer */
+    color: #000;
+    /* or any other dark color you prefer */
+  }
 }/*# sourceMappingURL=style.css.map */
