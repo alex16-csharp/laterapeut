@@ -41,3 +41,17 @@ window.addEventListener('resize', () => {
         body.classList.remove('desktop-view');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollLinks = document.querySelectorAll('.scroll-link');
+
+    scrollLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            window.scrollBy({
+                top: -100,
+                behavior: 'mooth'
+            });
+        });
+    });
+});

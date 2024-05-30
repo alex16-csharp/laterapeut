@@ -28,7 +28,7 @@ body {
     /* Center the navigation buttons horizontally */
     align-items: center;
     /* Center the navigation buttons vertically */
-    height: 80px;
+    height: 70px;
     /* Increase the height of the navbar */
     box-shadow: $box-shadow;
 }
@@ -40,7 +40,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    line-height: 80px;
+    line-height: 70px;
     /* Match the line height with navbar height */
 }
 
@@ -342,4 +342,10 @@ body {
     .column-right-reasons-to-see-psychologist p::before {
         margin-left: 0;
     }
+}
+
+// hyperlink navbar fix
+#depresia {
+    padding-top: 70px;
+    scroll-margin-top: 70px;
 }
