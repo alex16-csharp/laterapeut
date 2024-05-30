@@ -10,7 +10,7 @@ Acest proiect reprezintă un website dedicat serviciilor de psihoterapie, oferin
 
 ## Despre acest proiect
 
-Acest website este creat pentru a oferi o platformă accesibilă și informativă pentru cei care caută ajutor psihologic. Oferim resurse valoroase, informații despre diferite tipuri de terapie și posibilitatea de a contacta psihologi autorizați.
+Acest website este creat pentru a oferi o platformă accesibilă și informativă pentru cei care caută ajutor psihologic. Oferim resurse valoroase, informații despre diferite tipuri de terapie și posibilitatea de a contacta psiholog autorizați.
 
 ### Caracteristici ale website-ului:
 
