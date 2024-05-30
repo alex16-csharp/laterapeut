@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #fff;
   margin: 0;
@@ -224,5 +225,73 @@ body {
     /* or any other light color you prefer */
     color: #000;
     /* or any other dark color you prefer */
+  }
+}
+.column-right {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  border: 1.5px solid #ddd;
+  padding: 10px;
+}
+.column-right a {
+  text-decoration: none;
+  color: #3366cc;
+}
+
+.column-left {
+  float: left;
+  width: 70%;
+  padding: 15px;
+}
+.column-left h3::before {
+  content: "•";
+  color: #e4b047;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .column-left h3::before {
+    margin-left: 0;
+  }
+}
+.left-navigation-block-border {
+  border-bottom: 1px solid #ddd;
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-right {
+    width: 100%;
+  }
+  .column-left {
+    width: 100%;
+  }
+}
+.column-right-reasons-to-see-psychologist p::before {
+  content: "•";
+  color: #e4b047;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .column-right-reasons-to-see-psychologist p::before {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */
