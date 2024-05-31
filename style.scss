@@ -313,6 +313,12 @@ body {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    .big-navigation-block-border {
+        width: 100%;
+    }
+}
+
 /* Clear floats after the columns */
 .row::after {
     content: "";
@@ -350,57 +356,27 @@ body {
 }
 
 // hyperlink navbar fix
-#depresia {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#psihoterapia-aid {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#mers-la-terapeut {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#cautarea-terapeut {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#terapie-persoana-draga {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#tipul-de-terapie {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#buget {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#sesiune {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#medicatie {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#etica {
-    // padding-top: 70px;
-    scroll-margin-top: 100px;
-}
-
-#cand-se-termina-terapia {
+#depresia,
+#psihoterapia-aid,
+#mers-la-terapeut,
+#cautarea-terapeut,
+#terapie-persoana-draga,
+#tipul-de-terapie,
+#buget,
+#sesiune,
+#medicatie,
+#etica,
+#cand-se-termina-terapia,
+psihoterapia-aid,
+#decizia-inceperi,
+#benefici-terapie,
+#incepe-terapia,
+#comun-mers-terapeut,
+#terapie-cuplu,
+#consiliere-cuplu,
+#consiliere-copii,
+#benefici-terapie-grup,
+#terapie-grup {
     // padding-top: 70px;
     scroll-margin-top: 100px;
 }

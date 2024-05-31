@@ -270,6 +270,11 @@ body {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .big-navigation-block-border {
+    width: 100%;
+  }
+}
 /* Clear floats after the columns */
 .row::after {
   content: "";
@@ -303,46 +308,26 @@ body {
     margin-left: 0;
   }
 }
-#depresia {
-  scroll-margin-top: 100px;
-}
-
-#psihoterapia-aid {
-  scroll-margin-top: 100px;
-}
-
-#mers-la-terapeut {
-  scroll-margin-top: 100px;
-}
-
-#cautarea-terapeut {
-  scroll-margin-top: 100px;
-}
-
-#terapie-persoana-draga {
-  scroll-margin-top: 100px;
-}
-
-#tipul-de-terapie {
-  scroll-margin-top: 100px;
-}
-
-#buget {
-  scroll-margin-top: 100px;
-}
-
-#sesiune {
-  scroll-margin-top: 100px;
-}
-
-#medicatie {
-  scroll-margin-top: 100px;
-}
-
-#etica {
-  scroll-margin-top: 100px;
-}
-
-#cand-se-termina-terapia {
+#depresia,
+#psihoterapia-aid,
+#mers-la-terapeut,
+#cautarea-terapeut,
+#terapie-persoana-draga,
+#tipul-de-terapie,
+#buget,
+#sesiune,
+#medicatie,
+#etica,
+#cand-se-termina-terapia,
+psihoterapia-aid,
+#decizia-inceperi,
+#benefici-terapie,
+#incepe-terapia,
+#comun-mers-terapeut,
+#terapie-cuplu,
+#consiliere-cuplu,
+#consiliere-copii,
+#benefici-terapie-grup,
+#terapie-grup {
   scroll-margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
