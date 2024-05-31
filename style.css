@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 #navbar {
@@ -241,8 +242,8 @@ body {
 }
 
 .column-big {
-  float: left;
-  width: 70%;
+  float: right;
+  width: 75%;
   padding: 15px;
 }
 .column-big a::before {
@@ -307,5 +308,41 @@ body {
 }
 
 #psihoterapia-aid {
+  scroll-margin-top: 100px;
+}
+
+#mers-la-terapeut {
+  scroll-margin-top: 100px;
+}
+
+#cautarea-terapeut {
+  scroll-margin-top: 100px;
+}
+
+#terapie-persoana-draga {
+  scroll-margin-top: 100px;
+}
+
+#tipul-de-terapie {
+  scroll-margin-top: 100px;
+}
+
+#buget {
+  scroll-margin-top: 100px;
+}
+
+#sesiune {
+  scroll-margin-top: 100px;
+}
+
+#medicatie {
+  scroll-margin-top: 100px;
+}
+
+#etica {
+  scroll-margin-top: 100px;
+}
+
+#cand-se-termina-terapia {
   scroll-margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
