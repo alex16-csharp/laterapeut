@@ -401,3 +401,18 @@ psihoterapia-aid,
 
 // mobile adaptations
 
+// footer
+
+footer {
+    background-color: $color-blue;
+    color: $color-text-light;
+    text-align: center;
+    padding: 14px 16px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
