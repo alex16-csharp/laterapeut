@@ -243,7 +243,7 @@ body {
 
 .column-big {
   float: right;
-  width: 75%;
+  width: 70%;
   padding: 15px;
 }
 .column-big a::before {
@@ -328,6 +328,10 @@ psihoterapia-aid,
 #consiliere-cuplu,
 #consiliere-copii,
 #benefici-terapie-grup,
-#terapie-grup {
+#terapie-grup,
+#aparita-depresiei,
+#ce-pot-face,
+#hipnoza,
+#anxietate {
   scroll-margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
