@@ -420,3 +420,32 @@ psihoterapia-aid,
     color: $color-text-light;
     /* Use the same light text color as the navbar links */
 }
+
+@media screen and (max-width: 600px) {
+    .column-small {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .column-big {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+    }
+
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
+    a::before {
+        margin: 0;
+        padding: 0;
+    }
+
+}
