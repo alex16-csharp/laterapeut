@@ -401,34 +401,22 @@ psihoterapia-aid,
 
 // mobile adaptations
 
-// footer
-
-footer {
+#footer {
     background-color: $color-blue;
-    color: $color-text-light;
+    /* Use the same blue color as the navbar */
+    padding: 10px;
+    /* Add some padding to the footer */
     text-align: center;
-    padding: 14px 16px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    /* Center the text in the footer */
+    height: 70px;
+    /* Set the height of the footer to match the navbar */
+    clear: both;
+    /* Clear the floats to make sure the footer is at the bottom of the page */
 }
 
-footer p {
-    margin: 0;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer a {
+#footer-info {
+    margin: 0 auto;
+    /* Center the footer info */
     color: $color-text-light;
-    text-decoration: none;
+    /* Use the same light text color as the navbar links */
 }
