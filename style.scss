@@ -291,7 +291,7 @@ body {
         color: $color-blue-complementary;
         display: inline-block;
         width: 1em;
-        margin-left: 1em;
+        // margin-left: 1em;
     }
 }
 
@@ -425,6 +425,11 @@ psihoterapia-aid,
     .column-small {
         width: 100%;
         margin-bottom: 2rem;
+
+        h2,
+        p {
+            text-align: center;
+        }
     }
 
     .column-big {
@@ -436,16 +441,6 @@ psihoterapia-aid,
         h3 {
             text-align: center;
         }
-    }
-
-    a {
-        margin: 0;
-        padding: 0;
-    }
-
-    a::before {
-        margin: 0;
-        padding: 0;
     }
 
 }
