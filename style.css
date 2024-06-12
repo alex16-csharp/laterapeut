@@ -404,4 +404,10 @@ psihoterapia-aid,
 
 #myBtn:hover {
   background-color: #316be1;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.column-middle {
+  text-align: center;
+}
+
+/* add this to your style.css file *//*# sourceMappingURL=style.css.map */
