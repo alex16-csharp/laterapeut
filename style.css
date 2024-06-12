@@ -410,4 +410,23 @@ psihoterapia-aid,
   text-align: center;
 }
 
-/* add this to your style.css file *//*# sourceMappingURL=style.css.map */
+/* add this to your style.css file */
+.column-4 a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-4 {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-4 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

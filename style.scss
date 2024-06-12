@@ -472,3 +472,24 @@ psihoterapia-aid,
 
 /* add this to your style.css file */
 
+//contact column
+.column-4 a {
+    text-decoration: none; // remove underline
+    color: $color-text-dark; // set text color to blue
+}
+
+/* Create three equal columns that floats next to each other */
+.column-4 {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column-4 {
+        width: 100%;
+    }
+}
