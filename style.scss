@@ -331,6 +331,18 @@ body {
     margin: 0 auto;
 }
 
+.row-contact {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .row-contact {
+        width: 90%;
+    }
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
     .column-small {
@@ -401,7 +413,6 @@ psihoterapia-aid,
 #footer {
     background-color: $color-blue;
     /* Use the same blue color as the navbar */
-    padding: 10px;
     /* Add some padding to the footer */
     text-align: center;
     /* Center the text in the footer */
@@ -409,6 +420,12 @@ psihoterapia-aid,
     /* Set the height of the footer to match the navbar */
     clear: both;
     /* Clear the floats to make sure the footer is at the bottom of the page */
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+
+    p {
+        // color: $color-text-dark;
+    }
 }
 
 #footer-info {
@@ -468,6 +485,7 @@ psihoterapia-aid,
 
 .column-middle {
     text-align: center;
+    width: 100%;
 }
 
 /* add this to your style.css file */
@@ -483,6 +501,7 @@ psihoterapia-aid,
     float: left;
     width: 33.33%;
     text-align: center;
+    line-height: 0.6;
 }
 
 /* Clear floats after the columns */
