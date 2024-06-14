@@ -115,34 +115,65 @@ body {
 
 // sidebar
 
-.sidebar {
+.overlay {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
 }
 
-.sidebar a {
-    padding: 8px 8px 8px 32px;
+.overlay-content {
+    position: relative;
+    top: 8%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
     text-decoration: none;
+    font-size: 36px;
+    color: $color-text-light;
     display: block;
     transition: 0.3s;
 }
 
-.sidebar a:hover {
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
 }
 
-.sidebar .closebtn {
+.overlay .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
-    margin-left: 50px;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Hide the sidebar in desktop view */
+@media (min-width: 768px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 .openbtn {
@@ -166,7 +197,6 @@ body {
     box-shadow: $box-shadow
 }
 
-
 .openbtn:hover {
     background-color: $color-blue-monochromatic;
     /* Use the same hover color as the navigation bar links */
@@ -187,31 +217,6 @@ body {
     }
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-
-    .sidebar a {
-        font-size: 18px;
-    }
-}
-
-
-
-@media (max-width: 600px) {
-    #mobile-sidebar {
-        display: block;
-    }
-}
-
-@media (min-width: 601px) {
-    #mobile-sidebar {
-        display: none;
-    }
-}
-
 /* Set the default styles for the desktop navbar to be hidden */
 #desktop-navbar {
     display: none;
@@ -229,39 +234,6 @@ body {
     .desktop-view #desktop-navbar {
         display: block;
     }
-}
-
-/* Style the sidebar */
-#mySidebar {
-    background-color: $color-blue;
-    color: $color-text-light;
-
-    hr {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    img {
-        display: block;
-        margin: 10px auto;
-    }
-
-    .closebtn {
-        font-size: 2.5em;
-        /* Add this line to increase the font size */
-    }
-}
-
-/* Style the links inside the sidebar */
-#mySidebar a {
-    color: $color-text-light;
-    font-size: 1.3em;
-}
-
-/* Style the links inside the sidebar on hover */
-#mySidebar a:hover {
-    background-color: $color-blue-monochromatic;
-    color: $color-text-light;
 }
 
 @media (prefers-color-scheme: dark) {
