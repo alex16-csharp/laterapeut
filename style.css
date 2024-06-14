@@ -36,14 +36,19 @@ body {
   color: #fff;
 }
 
-.content {
-  padding: 16px;
+#navbar a.active {
+  background-color: #3366cc;
+  color: #fff;
 }
 
 .sticky {
   position: fixed;
+  /* Change from 'position: sticky' to 'position: fixed' */
   top: 0;
   width: 100%;
+  z-index: 1000;
+  /* Add a high z-index to ensure it's on top */
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sticky + .content {

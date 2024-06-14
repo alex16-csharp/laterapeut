@@ -12,6 +12,15 @@ function myFunction() {
     }
 }
 
+window.addEventListener('scroll', function () {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+});
+
 // sidebar
 function openNav() {
     document.getElementById("mySidebar").style.width = "280px";
