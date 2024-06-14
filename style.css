@@ -56,12 +56,21 @@ body {
   /* Adjust padding-top to match the new navbar height */
 }
 
+/* navbar mobile view*/
+@media (max-width: 767px) {
+  #navbar {
+    display: none;
+  }
+  .sticky {
+    display: none;
+  }
+}
 #info {
   background-color: #f2f2f2;
   color: #000;
   text-align: center;
   padding: 14px 16px;
-  font-size: 70%;
+  font-size: 90%;
   padding: 1.2em;
   margin: auto;
   letter-spacing: 2px;
@@ -79,16 +88,7 @@ body {
 /* on Mobile */
 @media screen and (max-width: 800px) {
   #info {
-    padding: 14px 16px;
-    font-size: 100%;
-    padding: 1.2em;
-    margin: auto;
-    letter-spacing: normal;
-    line-height: normal;
-    word-spacing: 0.25em;
-  }
-  #info .info {
-    max-width: 80em;
+    display: none;
   }
 }
 .sidebar {
@@ -245,6 +245,9 @@ body {
 .column-small a {
   text-decoration: none;
   color: #3366cc;
+}
+.column-small h2 {
+  text-align: center;
 }
 
 .column-big {
@@ -414,7 +417,7 @@ psihoterapia-aid,
   font-size: 18px;
   border: none;
   outline: none;
-  background: #3366cc url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  background: #3366cc url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V6M5 12l7-7 7 7'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
   cursor: pointer;
   box-shadow: 0 0.25rem 0.5rem 0 gray;
 }
