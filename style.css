@@ -416,7 +416,8 @@ psihoterapia-aid,
 .column-middle {
   text-align: left;
   width: 100%;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .column-middle h2 {
   text-align: center;
@@ -424,7 +425,8 @@ psihoterapia-aid,
 
 .column-contact {
   text-align: center;
-  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /* add this to your style.css file */
@@ -446,5 +448,29 @@ psihoterapia-aid,
 @media screen and (max-width: 600px) {
   .column-4 {
     width: 100%;
+  }
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  /* adjust the height to match the height of the lines */
+}
+
+.title:before,
+.title:after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #000;
+  margin: 0 10px;
+  opacity: 0.1;
+  /* set the opacity to 0.5 */
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    height: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
