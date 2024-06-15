@@ -220,13 +220,11 @@ body {
   border: 1.5px solid #ddd;
   padding: 10px;
   margin-bottom: 3.5rem;
+  text-align: center;
 }
 .column-small a {
   text-decoration: none;
   color: #3366cc;
-}
-.column-small h2 {
-  text-align: center;
 }
 
 .column-big {
@@ -239,6 +237,10 @@ body {
   color: #e4b047;
   display: inline-block;
   width: 1em;
+}
+.column-big h2,
+.column-big h3 {
+  text-align: center;
 }
 
 .column-big a {
@@ -253,7 +255,7 @@ body {
 }
 .big-navigation-block-border {
   border-bottom: 1px solid #ddd;
-  width: 60%;
+  width: 100%;
   padding-bottom: 10px;
 }
 
@@ -280,6 +282,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .row-contact,
+  .row {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 601px) {
   .row-contact,
   .row {
     width: 90%;
