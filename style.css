@@ -473,4 +473,107 @@ psihoterapia-aid,
   .title {
     height: 80px;
   }
+}
+/* Navigation Bar Styles */
+/* Navigation Bar Styles */
+/* Navigation Bar Styles */
+#navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3366cc;
+  /* blue background */
+  height: 70px;
+  /* match the height of the navbar */
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  /* add a box shadow */
+}
+
+#navbar li {
+  margin-right: 20px;
+  /* add some space between items */
+}
+
+#navbar a {
+  color: #fff;
+  /* light text color */
+  text-decoration: none;
+  transition: color 0.2s ease;
+  /* add a smooth transition effect */
+}
+
+#navbar a:hover {
+  background-color: #316be1;
+  /* monochromatic blue background on hover */
+  color: #e4b047;
+  /* darker shade of white on hover */
+}
+
+#navbar a.active {
+  background-color: #3366cc;
+  /* blue background for active item */
+  color: #fff;
+  /* light text color for active item */
+}
+
+/* Navigation Bar Styles */
+#navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3366cc;
+  /* blue background */
+  height: 70px;
+  /* match the height of the navbar */
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  /* add a box shadow */
+}
+
+#navbar li {
+  margin-right: 20px;
+  /* add some space between items */
+}
+
+#navbar a {
+  color: #fff;
+  /* light text color */
+  text-decoration: none;
+  transition: color 0.2s ease;
+  /* add a smooth transition effect */
+}
+
+#navbar a:hover {
+  background-color: #316be1;
+  /* monochromatic blue background on hover */
+  color: #f7f7f7;
+  /* darker shade of white on hover */
+}
+
+#navbar a.active {
+  background-color: #3366cc;
+  /* blue background for active item */
+  color: #fff;
+  /* light text color for active item */
+}
+
+/* navbar mobile view*/
+@media (max-width: 767px) {
+  #navbar li {
+    display: none;
+  }
+}
+/* navbar mobile view*/
+@media (max-width: 767px) {
+  #navbar {
+    display: none;
+  }
+  .sticky {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
