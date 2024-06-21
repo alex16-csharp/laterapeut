@@ -658,3 +658,25 @@ psihoterapia-aid,
         display: none;
     }
 }
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: $color-blue;
+    padding: 10px;
+    z-index: 1000;
+    /* add a high z-index to ensure it's on top */
+}
+
+#navbar li:hover>.submenu {
+    display: block;
+}
+
+.sticky #navbar li:hover>.submenu {
+    position: fixed;
+    /* make the submenu sticky when the navbar is sticky */
+    top: 70px;
+    /* adjust the top position to match the sticky navbar height */
+    width: 100%;
+    /* make the submenu full width */
+}
