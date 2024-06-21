@@ -42,7 +42,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    line-height: 70px;
+    // line-height: 70px;
     /* Match the line height with navbar height */
 }
 
@@ -665,7 +665,14 @@ psihoterapia-aid,
     background-color: $color-blue;
     padding: 10px;
     z-index: 1000;
-    /* add a high z-index to ensure it's on top */
+    list-style: none;
+    text-align: center;
+    overflow-y: auto;
+    /* make the submenu scrollable */
+    padding: 5px;
+    width: 20%;
+    /* reduce width from 100% to 80% */
+    line-height: normal;
 }
 
 #navbar li:hover>.submenu {
@@ -679,4 +686,18 @@ psihoterapia-aid,
     /* adjust the top position to match the sticky navbar height */
     width: 100%;
     /* make the submenu full width */
+}
+
+.submenu li {
+    display: block;
+    /* add this to make each submenu item a block element */
+    margin: 0 auto;
+    /* add this to center the li elements */
+}
+
+.submenu a {
+    display: block;
+    text-align: center;
+    /* add this to center the a elements */
+    line-height: 20px;
 }
