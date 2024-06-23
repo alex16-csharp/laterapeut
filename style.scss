@@ -42,7 +42,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    // line-height: 70px;
+    line-height: 70px;
     /* Match the line height with navbar height */
 }
 
@@ -54,6 +54,21 @@ body {
 #navbar a.active {
     background-color: $color-blue;
     color: $color-text-light;
+}
+
+.sticky {
+    position: fixed;
+    /* Change from 'position: sticky' to 'position: fixed' */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Add a high z-index to ensure it's on top */
+    box-shadow: $box-shadow;
+}
+
+.sticky+.content {
+    padding-top: 80px;
+    /* Adjust padding-top to match the new navbar height */
 }
 
 .sticky {
@@ -250,13 +265,16 @@ body {
     width: 20%;
     padding: 15px;
     border: 1.5px solid $color-dark-grey;
-    padding: 10px;
+    padding-top: 10px;
     margin-bottom: 3.5rem;
-    text-align: center;
 
     a {
         text-decoration: none;
         color: $color-blue;
+    }
+
+    h2 {
+        text-align: center;
     }
 }
 
@@ -274,8 +292,7 @@ body {
         // margin-left: 1em;
     }
 
-    h2,
-    h3 {
+    h2 {
         text-align: center;
     }
 }
@@ -312,7 +329,7 @@ body {
 }
 
 .row {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -335,6 +352,15 @@ body {
     .row-contact,
     .row {
         width: 90%;
+    }
+}
+
+/* For laptop screens */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .row,
+    .row-contact {
+        width: 70%;
     }
 }
 
@@ -482,8 +508,9 @@ psihoterapia-aid,
 .column-middle {
     text-align: left;
     width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
 
     h2 {
         text-align: center;
