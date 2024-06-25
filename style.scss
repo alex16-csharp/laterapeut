@@ -573,3 +573,46 @@ psihoterapia-aid,
         height: 80px;
     }
 }
+
+// hero image
+
+.hero-image {
+    background-image: url("/images/Psiholog-psihoterapeut-Bucuresti-Cristina-Anghel.jpg");
+    background-color: #cccccc;
+    height: 900px;
+    max-height: 697px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: $color-text-dark;
+}
+
+.hero-title {
+    font-size: 2rem; // or 1.5em, etc.
+}
+
+.hero-text button {
+    border: none;
+    border-radius: 30px; // or any other value you prefer
+    outline: 0;
+    display: inline-block;
+    padding: 10px 55px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
