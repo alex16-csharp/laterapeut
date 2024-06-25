@@ -389,6 +389,10 @@ psihoterapia-aid,
   padding-bottom: 2rem;
   padding-top: 0.5rem;
 }
+#footer p {
+  color: #fff;
+}
+
 #footer-info {
   margin: 0 auto;
   /* Center the footer info */
@@ -401,8 +405,7 @@ psihoterapia-aid,
     width: 100%;
     margin-bottom: 2rem;
   }
-  .column-small h2,
-  .column-small p {
+  .column-small h2 {
     text-align: center;
   }
   .column-big {
@@ -410,8 +413,7 @@ psihoterapia-aid,
     padding: 0;
     margin: 0;
   }
-  .column-big h2,
-  .column-big h3 {
+  .column-big h2 {
     text-align: center;
   }
 }
@@ -527,7 +529,7 @@ psihoterapia-aid,
   outline: 0;
   display: inline-block;
   padding: 10px 55px;
-  color: black;
+  color: #000;
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
@@ -536,4 +538,35 @@ psihoterapia-aid,
 .hero-text button:hover {
   background-color: #555;
   color: white;
+}
+
+/* Add this to your CSS file */
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+  /* Adjust hero image height */
+  .hero-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  /* Adjust hero text elements */
+  .hero-text {
+    padding: 20px 10px;
+    /* Reduce right padding to 10px */
+    margin-left: -20px;
+    /* Add negative left margin to extend text to the left */
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  .hero-title p {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .hero-text button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
