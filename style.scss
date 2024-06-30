@@ -650,3 +650,16 @@ psihoterapia-aid,
         font-size: 12px;
     }
 }
+
+//sidebar dropdown
+
+.overlay {
+    .sidebar-dropdown {
+        background-color: $color-grey;
+
+        a {
+            font-size: 26px;
+            color: $color-text-dark;
+        }
+    }
+}
