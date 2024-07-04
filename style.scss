@@ -650,3 +650,20 @@ psihoterapia-aid,
         font-size: 12px;
     }
 }
+
+.hero-image {
+    animation: fadeIn 2s;
+    /* duration: 2 seconds */
+    animation-fill-mode: forwards;
+    /* keep the final state */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
