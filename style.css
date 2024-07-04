@@ -585,4 +585,19 @@ psihoterapia-aid,
   100% {
     opacity: 1;
   }
+}
+.hero-title {
+  animation: fadeInUp 1.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=style.css.map */
