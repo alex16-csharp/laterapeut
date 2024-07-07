@@ -620,7 +620,7 @@ psihoterapia-aid,
 
     /* Adjust hero image height */
     .hero-image {
-        height: 300px;
+        height: 350px;
         background-size: cover;
         background-position: center;
     }
@@ -632,7 +632,7 @@ psihoterapia-aid,
         margin-left: -20px;
         /* Add negative left margin to extend text to the left */
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.1;
         top: 48%;
         left: 55%;
@@ -713,7 +713,7 @@ psihoterapia-aid,
 }
 
 .animated-paragraph {
-    animation: slideUp 2s;
+    animation: slideUp 1.5s;
     animation-fill-mode: forwards;
 }
 
