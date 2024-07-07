@@ -650,3 +650,81 @@ psihoterapia-aid,
         font-size: 12px;
     }
 }
+
+.hero-image {
+    animation: fadeIn 2s;
+    /* duration: 2 seconds */
+    animation-fill-mode: forwards;
+    /* keep the final state */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-title,
+.hero-text p {
+    animation: fadeInUp 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text button {
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.hero-text button:hover {
+    animation: pulse 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.animated-paragraph {
+    animation: slideUp 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
