@@ -72,7 +72,7 @@ body {
 }
 
 /* navbar mobile view*/
-@media (max-width: 767px) {
+@media (max-width: 799px) {
   #navbar {
     display: none;
   }
@@ -101,7 +101,7 @@ body {
 }
 
 /* on Mobile */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
   #info {
     display: none;
   }
@@ -159,7 +159,7 @@ body {
   }
 }
 /* Hide the sidebar in desktop view */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .sidebar {
     display: none;
   }
@@ -210,7 +210,7 @@ body {
 }
 
 /* Use a media query to show the desktop navbar only when the screen width is greater than or equal to 768px */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   /* Hide the mobile sidebar */
   #mobile-sidebar {
     display: none;
