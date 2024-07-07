@@ -624,4 +624,19 @@ psihoterapia-aid,
     transform: scale(1);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   }
+}
+.animated-paragraph {
+  animation: slideUp 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
