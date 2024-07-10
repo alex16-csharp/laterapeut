@@ -523,6 +523,14 @@ psihoterapia-aid,
   color: #000;
 }
 
+.hero-text a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
 .hero-title {
   font-size: 1.5rem;
 }
@@ -574,21 +582,6 @@ psihoterapia-aid,
     font-size: 12px;
   }
 }
-.hero-image {
-  animation: fadeIn 2s;
-  /* duration: 2 seconds */
-  animation-fill-mode: forwards;
-  /* keep the final state */
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .hero-title,
 .hero-text p {
   animation: fadeInUp 1.5s ease-out;
@@ -630,17 +623,15 @@ psihoterapia-aid,
 }
 #info,
 .animated-paragraph {
-  animation: textAnimation 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 
-@keyframes textAnimation {
+@keyframes fadeIn {
   0% {
-    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
     opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
