@@ -86,7 +86,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+//animation navbar text
 anime.timeline({ loop: false })
     .add({
         targets: '.ml5 .line',
@@ -115,6 +115,42 @@ anime.timeline({ loop: false })
         offset: '-=300'
     }).add({
         targets: '.ml5 .letters-right',
+        opacity: [0, 1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+    })
+
+//animation sidebar text
+anime.timeline({ loop: false })
+    .add({
+        targets: '.ml6 .line2',
+        opacity: [0.5, 1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 1000
+    }).add({
+        targets: '.ml6 .line2',
+        duration: 1000,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-2 + 1.8 * 2 * i) + "em"
+    }).add({
+        targets: '.ml6 .ampersand2',
+        opacity: [0, 1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 1600,
+        offset: '-=600'
+    }).add({
+        targets: '.ml6 .letters-left2',
+        opacity: [0, 1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+    }).add({
+        targets: '.ml6 .letters-right2',
         opacity: [0, 1],
         translateX: ["-0.5em", 0],
         easing: "easeOutExpo",
