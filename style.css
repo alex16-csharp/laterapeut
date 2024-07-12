@@ -621,17 +621,39 @@ psihoterapia-aid,
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   }
 }
-#info,
-.animated-paragraph {
-  animation: fadeIn 1s ease-in-out;
-  animation-fill-mode: forwards;
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-weight: 400;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
