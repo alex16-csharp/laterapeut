@@ -636,7 +636,7 @@ psihoterapia-aid,
 
     /* Adjust hero image height */
     .hero-image {
-        height: 350px;
+        height: 400px;
         background-size: cover;
         background-position: center;
     }
@@ -664,6 +664,13 @@ psihoterapia-aid,
     .hero-text button {
         padding: 10px 20px;
         font-size: 12px;
+    }
+}
+
+//tablet view styles
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .hero-image {
+        height: 597px;
     }
 }
 
