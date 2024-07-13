@@ -134,7 +134,7 @@ anime.timeline({ loop: false })
         targets: '.ml6 .line2',
         duration: 1000,
         easing: "easeOutExpo",
-        translateY: (el, i) => (-2 + 1.8 * 2 * i) + "em"
+        translateY: (el, i) => (-1.9 + 1.9 * 2 * i) + "em"
     }).add({
         targets: '.ml6 .ampersand2',
         opacity: [0, 1],
