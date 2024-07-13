@@ -787,3 +787,15 @@ psihoterapia-aid,
     display: inline-block;
     opacity: 0;
 }
+
+/* Hide the .break class by default */
+.break {
+    display: none;
+}
+
+/* Show the .break class only when the screen width is between 799px and 1038px */
+@media only screen and (min-width: 799px) and (max-width: 1038px) {
+    .break {
+        display: block;
+    }
+}
