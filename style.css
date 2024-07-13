@@ -545,6 +545,7 @@ psihoterapia-aid,
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .hero-text button:hover {
@@ -553,7 +554,7 @@ psihoterapia-aid,
 }
 
 /* Mobile view styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   /* Adjust hero image height */
   .hero-image {
     height: 400px;
@@ -579,12 +580,23 @@ psihoterapia-aid,
   }
   .hero-text button {
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   .hero-image {
     height: 597px;
+  }
+  .hero-text {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-text {
+    font-size: 1.2rem;
   }
 }
 .hero-title,
