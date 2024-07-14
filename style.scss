@@ -92,6 +92,15 @@ body {
     /* Adjust padding-top to match the new navbar height */
 }
 
+.img-nav {
+    width: 20rem;
+    height: 2rem;
+    margin: 10px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center
+}
+
 /* navbar mobile view*/
 @media (max-width: 799px) {
     #navbar {
