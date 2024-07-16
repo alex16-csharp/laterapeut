@@ -157,4 +157,32 @@ anime.timeline({ loop: false })
         duration: 600,
         offset: '-=600'
     })
-    
+
+
+// Get all internal links
+const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+// Add event listener to each internal link
+internalLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').replace('#', '');
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            // Add animation scroll effect
+            scrollToElement(targetElement);
+        }
+    });
+});
+
+// Function to animate scroll to an element
+function scrollToElement(element) {
+    const offset = element.offsetTop;
+    const duration = 1000; // adjust the duration as needed
+    const easing = 'easeInOutCubic'; // adjust the easing as needed
+
+    window.scrollTo({
+        top: offset,
+        behavior: 'smooth'
+    });
+}

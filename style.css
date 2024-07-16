@@ -358,7 +358,7 @@ body {
 #sesiune,
 #medicatie,
 #cand-se-termina-terapia,
-psihoterapia-aid,
+#psihoterapia-aid,
 #decizia-inceperi,
 #benefici-terapie,
 #incepe-terapia,
@@ -793,4 +793,9 @@ div.card-desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Add a smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */
