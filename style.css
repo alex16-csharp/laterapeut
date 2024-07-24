@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* Add a smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
   margin: 0;
@@ -795,21 +800,18 @@ div.card-desc {
   clear: both;
 }
 
-/* Add a smooth scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
-
 .contact-form {
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  font-size: 1.1rem;
 }
 
-.contact-form h2 {
+.contact-form h1,
+.contact-form p {
   margin-top: 0;
 }
 
@@ -818,23 +820,27 @@ html {
   margin-bottom: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+.contact-form input {
+  width: 94%;
+  padding: 11px;
+  margin-bottom: 2.5rem;
   border: 1px solid #ccc;
+  border-radius: 35px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button[type=submit] {
-  background-color: #4CAF50;
+  background-color: #000;
   color: #fff;
+  width: 100%;
+  font-size: 1rem;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 35px;
   cursor: pointer;
 }
 
 .contact-form button[type=submit]:hover {
-  background-color: #3e8e41;
+  background-color: #333;
 }/*# sourceMappingURL=style.css.map */
