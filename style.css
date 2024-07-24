@@ -10,7 +10,7 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: #3366cc;
+  background-color: #000;
   display: flex;
   justify-content: center;
   /* Center the navigation buttons horizontally */
@@ -34,12 +34,12 @@ body {
 }
 
 #navbar a:hover {
-  background-color: #316be1;
+  background-color: #333;
   color: #fff;
 }
 
 #navbar a.active {
-  background-color: #3366cc;
+  background-color: #000;
   color: #fff;
 }
 
@@ -180,7 +180,7 @@ body {
   font-size: 1.3em;
   /* Match the font size with the navigation bar links */
   cursor: pointer;
-  background-color: #3366cc;
+  background-color: #000;
   /* Use the same blue color as the navigation bar */
   color: #fff;
   /* Use the same white color as the navigation bar links */
@@ -198,7 +198,7 @@ body {
 }
 
 .openbtn:hover {
-  background-color: #316be1;
+  background-color: #333;
   /* Use the same hover color as the navigation bar links */
   color: #fff;
   /* Use the same white color as the navigation bar links */
@@ -250,7 +250,7 @@ body {
 }
 .column-small a {
   text-decoration: none;
-  color: #3366cc;
+  color: #000;
 }
 .column-small h2 {
   text-align: center;
@@ -263,7 +263,7 @@ body {
 }
 .column-big a::before {
   content: "•";
-  color: #e4b047;
+  color: #f00;
   display: inline-block;
   width: 1em;
 }
@@ -273,7 +273,7 @@ body {
 
 .column-big a {
   text-decoration: none;
-  color: #3366cc;
+  color: #000;
 }
 
 @media screen and (max-width: 600px) {
@@ -341,7 +341,7 @@ body {
 }
 .bulletpoints p::before {
   content: "•";
-  color: #e4b047;
+  color: #f00;
   display: inline-block;
 }
 
@@ -404,7 +404,7 @@ body {
 }
 
 #footer {
-  background-color: #3366cc;
+  background-color: #000;
   /* Use the same blue color as the navbar */
   /* Add some padding to the footer */
   text-align: center;
@@ -456,13 +456,13 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background: #3366cc url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V6M5 12l7-7 7 7'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  background: #000 url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V6M5 12l7-7 7 7'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
   cursor: pointer;
   box-shadow: 0 0.25rem 0.5rem 0 gray;
 }
 
 #myBtn:hover {
-  background-color: #316be1;
+  background-color: #333;
 }
 
 .column-middle {

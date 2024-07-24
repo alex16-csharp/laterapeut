@@ -1,14 +1,17 @@
 // colour variables 
 
 $color-website-backgroud: #fff;
+
 $color-text-light: #fff;
+$color-text-dark: #000;
+
 $color-grey: #f2f2f2;
 $color-dark-grey: #ddd;
-$color-text-dark: #000;
-$color-blue: #3366cc;
-$color-blue-monochromatic: #316be1;
-$color-dark-blue: #6147e4;
-$color-blue-complementary: #e4b047;
+//color main
+$color-blue: #000;
+$color-main-monochromatic: #333;
+$color-main-analogous: #f00;
+
 $box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 $light-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
@@ -55,7 +58,7 @@ body {
 }
 
 #navbar a:hover {
-    background-color: $color-blue-monochromatic;
+    background-color: $color-main-monochromatic;
     color: $color-text-light;
 }
 
@@ -230,7 +233,7 @@ body {
 }
 
 .openbtn:hover {
-    background-color: $color-blue-monochromatic;
+    background-color: $color-main-monochromatic;
     /* Use the same hover color as the navigation bar links */
     color: $color-text-light;
     /* Use the same white color as the navigation bar links */
@@ -303,7 +306,7 @@ body {
 
     a::before {
         content: "\2022";
-        color: $color-blue-complementary;
+        color: $color-main-analogous;
         display: inline-block;
         width: 1em;
         // margin-left: 1em;
@@ -397,7 +400,7 @@ body {
 
 .bulletpoints p::before {
     content: "\2022";
-    color: $color-blue-complementary;
+    color: $color-main-analogous;
     display: inline-block;
 }
 
@@ -531,7 +534,7 @@ body {
 }
 
 #myBtn:hover {
-    background-color: $color-blue-monochromatic
+    background-color: $color-main-monochromatic
 }
 
 .column-middle {
