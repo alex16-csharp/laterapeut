@@ -552,9 +552,13 @@ body {
 }
 
 .column-contact {
+    max-width: 500px;
     text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: $light-shadow;
+    border-radius: 35px;
 }
 
 /* add this to your style.css file */
@@ -568,17 +572,24 @@ body {
 /* Create three equal columns that floats next to each other */
 .column-4 {
     float: left;
-    width: 33.33%;
+    width: 17.89vw;
+    min-width: 28%;
+    margin: 1rem;
     text-align: center;
-    line-height: 0.6;
+    line-height: 0.8;
+    background-color: #f9f9f9;
+    box-shadow: $light-shadow;
+    border-radius: 35px;
+    font-size: 1.1rem;
 }
 
 /* Clear floats after the columns */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
+@media screen and (max-width:799px) {
     .column-4 {
-        width: 100%;
+        width: 95%;
+        margin-bottom: 2.5rem;
     }
 }
 
