@@ -499,7 +499,7 @@ body {
 /* Create three equal columns that floats next to each other */
 .column-4 {
   float: left;
-  width: 17.89vw;
+  width: 17vw;
   min-width: 28%;
   margin: 1rem;
   text-align: center;
@@ -865,6 +865,11 @@ div.card-desc {
 
 @media only screen and (max-width: 799px) {
   .contact-form {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column-contact {
     max-width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
