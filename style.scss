@@ -551,19 +551,6 @@ body {
     }
 }
 
-.column-contact {
-    max-width: 500px;
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: $light-shadow;
-    border-radius: 35px;
-}
-
-/* add this to your style.css file */
-
-//contact column
 .column-4 a {
     text-decoration: none; // remove underline
     color: $color-text-dark; // set text color to blue
@@ -583,7 +570,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Clear floats after the columns */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:799px) {
@@ -916,16 +902,37 @@ div.card-desc {
 
 .contact-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.contact-form {
-    max-width: 500px;
-    margin: 40px auto;
+.column-contact {
+    max-width: 400px;
+    text-align: center;
+    margin: 40px 10px;
     padding: 20px;
     background-color: #f9f9f9;
     box-shadow: $light-shadow;
     border-radius: 35px;
     font-size: 1.1rem;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 40px 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: $light-shadow;
+    border-radius: 35px;
+    font-size: 1.1rem;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-form p {
@@ -970,14 +977,19 @@ div.card-desc {
     background-color: $color-main-monochromatic;
 }
 
-@media only screen and (max-width: 799px) {
-    .contact-form {
-        max-width: 80%;
-    }
-}
+// @media only screen and (max-width: 799px) {
+//     .contact-form {
+//         max-width: 80%;
+//     }
+// }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
+
     .column-contact {
-        max-width: 80%;
+        flex-basis: 80%;
+    }
+
+    .contact-form {
+        flex-basis: 80%;
     }
 }

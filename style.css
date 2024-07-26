@@ -480,17 +480,6 @@ body {
   text-align: center;
 }
 
-.column-contact {
-  max-width: 500px;
-  text-align: center;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-radius: 35px;
-}
-
-/* add this to your style.css file */
 .column-4 a {
   text-decoration: none;
   color: #000;
@@ -510,7 +499,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Clear floats after the columns */
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 799px) {
   .column-4 {
@@ -813,16 +801,37 @@ div.card-desc {
 
 .contact-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.contact-form {
-  max-width: 500px;
-  margin: 40px auto;
+.column-contact {
+  max-width: 400px;
+  text-align: center;
+  margin: 40px 10px;
   padding: 20px;
   background-color: #f9f9f9;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 35px;
   font-size: 1.1rem;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 40px 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  font-size: 1.1rem;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form p {
@@ -868,12 +877,10 @@ div.card-desc {
 }
 
 @media only screen and (max-width: 799px) {
-  .contact-form {
-    max-width: 80%;
-  }
-}
-@media screen and (max-width: 800px) {
   .column-contact {
-    max-width: 80%;
+    flex-basis: 80%;
+  }
+  .contact-form {
+    flex-basis: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
