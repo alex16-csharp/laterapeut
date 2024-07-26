@@ -553,7 +553,7 @@ body {
 
 .column-4 a {
     text-decoration: none; // remove underline
-    color: $color-text-dark; // set text color to blue
+    color: $color-text-dark;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -919,6 +919,30 @@ div.card-desc {
     font-size: 1.1rem;
     flex-basis: 50%;
     align-items: center;
+}
+
+.column-contact a {
+    text-decoration: none; // remove underline
+    color: $color-text-light;
+    font-size: 1.2rem;
+}
+
+.column-contact h1 {
+    color: #32442c;
+    margin-top: 0;
+}
+
+.column-contact button {
+    margin-top: 1.5rem;
+    background-color: #687b44;
+    color: $color-text-light;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 0.9rem;
 }
 
 .contact-form {

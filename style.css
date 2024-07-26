@@ -820,6 +820,30 @@ div.card-desc {
   align-items: center;
 }
 
+.column-contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.column-contact h1 {
+  color: #32442c;
+  margin-top: 0;
+}
+
+.column-contact button {
+  margin-top: 1.5rem;
+  background-color: #687b44;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  padding: 0.9rem;
+}
+
 .contact-form {
   max-width: 400px;
   margin: 40px 10px;
