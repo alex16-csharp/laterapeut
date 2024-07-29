@@ -200,3 +200,31 @@ form.addEventListener('submit', (e) => {
         .then((data) => console.log(data))
         .catch((error) => console.error(error));
 });
+
+//column-cotact button animation 
+// ...
+
+//column-cotact button animation 
+const buttons = document.querySelectorAll('.column-contact button, .contact-form button');
+
+buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        anime({
+            targets: button,
+            scale: 1.1,
+            duration: 5,
+            easing: 'easeInOutSine'
+        });
+    });
+
+    button.addEventListener('mouseout', () => {
+        anime({
+            targets: button,
+            scale: 1,
+            duration: 5,
+            easing: 'easeInOutSine'
+        });
+    });
+});
+
+// ...
