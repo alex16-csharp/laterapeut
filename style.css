@@ -842,6 +842,7 @@ div.card-desc {
   border-radius: 35px;
   cursor: pointer;
   padding: 0.9rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form {
@@ -894,6 +895,7 @@ div.card-desc {
   border-radius: 35px;
   cursor: pointer;
   padding: 0.9rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form button[type=submit]:hover {

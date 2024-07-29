@@ -943,6 +943,7 @@ div.card-desc {
     border-radius: 35px;
     cursor: pointer;
     padding: 0.9rem;
+    box-shadow: $box-shadow;
 }
 
 .contact-form {
@@ -995,17 +996,12 @@ div.card-desc {
     border-radius: 35px;
     cursor: pointer;
     padding: 0.9rem;
+    box-shadow: $box-shadow;
 }
 
 .contact-form button[type="submit"]:hover {
     background-color: $color-main-monochromatic;
 }
-
-// @media only screen and (max-width: 799px) {
-//     .contact-form {
-//         max-width: 80%;
-//     }
-// }
 
 @media only screen and (max-width: 799px) {
 
@@ -1019,7 +1015,6 @@ div.card-desc {
 }
 
 //ionicon
-
 ion-icon[name="call-outline"] {
     font-size: 24px;
     padding-top: 1rem;
