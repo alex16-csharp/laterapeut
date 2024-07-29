@@ -227,4 +227,36 @@ buttons.forEach(button => {
     });
 });
 
-// ...
+// ion icon animation
+const timeline = anime.timeline({
+    loop: true
+});
+
+timeline
+    .add({
+        targets: 'ion-icon',
+        rotate: '360deg',
+        duration: 2000
+    })
+    .add({
+        targets: 'ion-icon',
+        scale: 1.2,
+        duration: 1000
+    })
+    .add({
+        targets: 'ion-icon',
+        scale: 1,
+        duration: 1000,
+        easing: 'easeInOutSine'
+    })
+    .add({
+        targets: 'ion-icon',
+        rotate: '0deg',
+        duration: 3000
+    });
+
+document.querySelectorAll('ion-icon').forEach(icon => {
+    icon.addEventListener('mouseover', () => {
+        timeline.play();
+    });
+});
