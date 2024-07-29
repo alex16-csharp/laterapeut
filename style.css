@@ -907,4 +907,18 @@ div.card-desc {
   .contact-form {
     flex-basis: 80%;
   }
+}
+ion-icon[name=call-outline] {
+  font-size: 24px;
+  padding-top: 1rem;
+}
+
+ion-icon[name=mail-outline] {
+  font-size: 24px;
+  padding-top: 1rem;
+}
+
+ion-icon[name=navigate-outline] {
+  font-size: 24px;
+  padding-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
