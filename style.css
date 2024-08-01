@@ -768,6 +768,23 @@ div.card-desc {
   color: #666;
 }
 
+.media-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card svg {
+  margin: 0 auto;
+  display: block;
+}
+
 .card {
   transition: transform 0.3s ease-out;
   /* add transition effect */
