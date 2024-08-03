@@ -510,7 +510,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
   /* adjust the height to match the height of the lines */
 }
 
@@ -526,8 +525,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .title {
-    height: 80px;
+  .title:before,
+  .title:after {
+    content: "";
+    display: none;
   }
 }
 .hero-image {
