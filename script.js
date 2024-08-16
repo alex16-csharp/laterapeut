@@ -260,3 +260,4 @@ document.querySelectorAll('ion-icon').forEach(icon => {
         timeline.play();
     });
 });
+
