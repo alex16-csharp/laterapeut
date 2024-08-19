@@ -1017,4 +1017,23 @@ ion-icon[name=mail-outline] {
 ion-icon[name=navigate-outline] {
   font-size: 24px;
   padding-top: 1rem;
+}
+
+.scroll-watcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
 }/*# sourceMappingURL=style.css.map */

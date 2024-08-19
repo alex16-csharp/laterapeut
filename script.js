@@ -21,8 +21,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
-
 // sidebar
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -65,9 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 //scroll top button
-// Get the button
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -187,22 +183,21 @@ function scrollToElement(element) {
     });
 }
 
-const form = document.getElementById('contact-form');
+//CONTACT FORM 
+// const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    fetch('/your-server-url', {
-        method: 'POST',
-        body: formData,
-    })
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((error) => console.error(error));
-});
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const formData = new FormData(form);
+//     fetch('/your-server-url', {
+//         method: 'POST',
+//         body: formData,
+//     })
+//         .then((response) => response.json())
+//         .then((data) => console.log(data))
+//         .catch((error) => console.error(error));
+// });
 
-//column-cotact button animation 
-// ...
 
 //column-cotact button animation 
 const buttons = document.querySelectorAll('.column-contact button, .contact-form button');
@@ -261,3 +256,16 @@ document.querySelectorAll('ion-icon').forEach(icon => {
     });
 });
 
+//scroll listener
+window.addEventListener("scroll", setScrollVar);
+window.addEventListener("resize", setScrollVar);
+
+function setScrollVar() {
+    const htmlElement = document.documentElement;
+    const precentOfScreenHeightScrolled =
+        htmlElement.scrollTop / htmlElement.clientHeight;
+    console.log(precentOfScreenHeightScrolled * 100, 100);
+    htmlElement.style.setProperty("--scroll", precentOfScreenHeightScrolled * 100, 100);
+}
+
+setScrollVar()

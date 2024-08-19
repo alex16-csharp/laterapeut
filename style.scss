@@ -1,5 +1,4 @@
 // colour variables 
-
 $color-website-backgroud: #fff;
 
 $color-text-light: #fff;
@@ -33,7 +32,6 @@ body {
 }
 
 // navigation bar
-
 #navbar {
     overflow: hidden;
     background-color: $color-main;
@@ -151,7 +149,6 @@ body {
 }
 
 // sidebar
-
 .overlay {
     height: 100%;
     width: 0;
@@ -346,7 +343,6 @@ body {
     }
 }
 
-
 .column-big {
     float: right;
     width: 70%;
@@ -375,7 +371,6 @@ body {
         margin-left: 0;
     }
 }
-
 
 .big-navigation-block-border {
     border-bottom: 1px solid $color-dark-grey;
@@ -431,7 +426,6 @@ body {
         width: 70%;
     }
 }
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:700px) {
@@ -514,7 +508,6 @@ body {
 }
 
 // mobile adaptations
-
 #footer {
     background-color: $color-main;
     /* Use the same blue color as the navbar */
@@ -562,7 +555,6 @@ body {
 }
 
 //scroll top btn
-
 #myBtn {
     z-index: 99;
     position: fixed;
@@ -590,7 +582,6 @@ body {
     width: 100%;
     padding-bottom: 2rem;
     padding-top: 2rem;
-
 
     h2 {
         text-align: center;
@@ -1137,4 +1128,24 @@ ion-icon[name="mail-outline"] {
 ion-icon[name="navigate-outline"] {
     font-size: 24px;
     padding-top: 1rem;
+}
+
+//scroll animation
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: $color-main-monochromatic;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
 }
