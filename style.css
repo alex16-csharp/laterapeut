@@ -249,9 +249,15 @@ body {
   float: left;
   width: 20%;
   padding: 15px;
-  border: 1.5px solid #ddd;
   padding-top: 10px;
   margin-bottom: 3.5rem;
+}
+.column-small img {
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
 }
 .column-small h2 {
   text-align: center;
@@ -269,35 +275,55 @@ body {
 .column-small #rise7,
 .column-small #rise8 {
   margin-bottom: 1rem;
-  animation: riseUp 1.1s ease-out;
-  animation-fill-mode: forwards;
   opacity: 0;
 }
-.column-small #rise1 {
+.column-small #rise1.animate,
+.column-small #rise2.animate,
+.column-small #rise3.animate,
+.column-small #rise4.animate,
+.column-small #rise5.animate,
+.column-small #rise6.animate,
+.column-small #rise7.animate,
+.column-small #rise8.animate {
+  animation: riseUp 1.1s ease-out;
+  animation-fill-mode: forwards;
+}
+.column-small #rise1.animate {
   animation-delay: 0.3s;
 }
-.column-small #rise2 {
+.column-small #rise2.animate {
   animation-delay: 0.7s;
 }
-.column-small #rise3 {
+.column-small #rise3.animate {
   animation-delay: 1s;
 }
-.column-small #rise4 {
+.column-small #rise4.animate {
   animation-delay: 1.3s;
 }
-.column-small #rise5 {
+.column-small #rise5.animate {
   animation-delay: 1.6s;
 }
-.column-small #rise6 {
+.column-small #rise6.animate {
   animation-delay: 1.9s;
 }
-.column-small #rise7 {
+.column-small #rise7.animate {
   animation-delay: 2.2s;
 }
-.column-small #rise8 {
+.column-small #rise8.animate {
   animation-delay: 2.5s;
 }
 
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) scale(0.8);
+    will-change: transform, opacity;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 .column-big {
   float: right;
   width: 70%;
@@ -311,6 +337,13 @@ body {
 }
 .column-big h2 {
   text-align: center;
+}
+.column-big img {
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
 }
 
 .column-big a {
@@ -516,7 +549,20 @@ body {
 .column-middle h2 {
   text-align: center;
 }
+.column-middle img {
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
 
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
 .column-4 a {
   text-decoration: none;
   color: #000;
@@ -690,21 +736,6 @@ body {
     transform: translateY(0);
   }
 }
-@keyframes riseUp {
-  0% {
-    opacity: 0;
-    transform: translateY(25px) scale(0.8);
-    will-change: transform, opacity;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-.riseUp {
-  animation: riseUp 1.5s ease-out;
-}
-
 @keyframes pulse {
   0% {
     transform: scale(1);

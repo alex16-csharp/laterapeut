@@ -30,7 +30,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-// Get the body element
+// dark view mobile fix to be white website background
 const body = document.querySelector('body');
 
 // Set the initial view based on the screen width
@@ -257,15 +257,30 @@ document.querySelectorAll('ion-icon').forEach(icon => {
 });
 
 //scroll listener
-window.addEventListener("scroll", setScrollVar);
-window.addEventListener("resize", setScrollVar);
+// window.addEventListener("scroll", setScrollVar);
+// window.addEventListener("resize", setScrollVar);
 
-function setScrollVar() {
-    const htmlElement = document.documentElement;
-    const precentOfScreenHeightScrolled =
-        htmlElement.scrollTop / htmlElement.clientHeight;
-    console.log(precentOfScreenHeightScrolled * 100, 100);
-    htmlElement.style.setProperty("--scroll", precentOfScreenHeightScrolled * 100, 100);
-}
+// function setScrollVar() {
+//     const htmlElement = document.documentElement;
+//     const precentOfScreenHeightScrolled =
+//         htmlElement.scrollTop / htmlElement.clientHeight;
+//     console.log(precentOfScreenHeightScrolled * 100, 100);
+//     htmlElement.style.setProperty("--scroll", precentOfScreenHeightScrolled * 100, 100);
+// }
 
-setScrollVar()
+// setScrollVar()
+
+//animation list
+const riseElements = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        }
+    });
+}, { threshold: 1.0 });
+
+riseElements.forEach((element) => {
+    observer.observe(element);
+});
