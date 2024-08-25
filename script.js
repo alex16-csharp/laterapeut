@@ -271,7 +271,7 @@ document.querySelectorAll('ion-icon').forEach(icon => {
 // setScrollVar()
 
 //animation list
-const riseElements = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8');
+const riseElements = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8, #rise9, #rise10, #rise11, #rise12, #rise13, #rise14, #rise15, #rise16,#rise17,#rise18, #rise19, #rise20, #rise21, #rise22, #rise23, #rise24, #rise25');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
