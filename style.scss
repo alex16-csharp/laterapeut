@@ -13,6 +13,7 @@ $color-main-analogous: #f00;
 
 $box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 $light-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+$heavy-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 400 to 700
@@ -1333,5 +1334,46 @@ ion-icon[name="navigate-outline"] {
 @keyframes scroll-watcher {
     to {
         scale: 1 1;
+    }
+}
+
+//animated unordered list
+.staggered-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+        opacity: 0;
+        transform: translateY(20px);
+        margin: 20px;
+        padding: 10px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        box-shadow: $heavy-shadow;
+    }
+}
+
+.staggered-list.animate {
+    li {
+        animation: emergeFromDepth 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.2}s;
+            }
+        }
+    }
+}
+
+@keyframes emergeFromDepth {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
