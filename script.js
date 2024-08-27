@@ -296,10 +296,6 @@ const observer2 = new IntersectionObserver((entries) => {
         riseElements2.forEach((element) => {
             element.classList.add('animate');
         });
-    } else {
-        riseElements2.forEach((element) => {
-            element.classList.remove('animate');
-        });
     }
 }, { threshold: 0.5 });
 
