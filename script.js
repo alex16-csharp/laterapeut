@@ -271,16 +271,47 @@ document.querySelectorAll('ion-icon').forEach(icon => {
 // setScrollVar()
 
 //animation list
-const riseElements = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8, #rise9, #rise10, #rise11, #rise12, #rise13, #rise14, #rise15, #rise16,#rise17,#rise18, #rise19, #rise20, #rise21, #rise22, #rise23, #rise24, #rise25, #staggered-list');
+//Observer 1: #rise-list1
+const riseList1 = document.querySelector('#rise-list1');
+const riseElements1 = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8');
 
-const observer = new IntersectionObserver((entries) => {
+const observer1 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
+            riseElements1.forEach((element) => {
+                element.classList.add('animate');
+            });
         }
     });
 }, { threshold: 1.0 });
 
-riseElements.forEach((element) => {
-    observer.observe(element);
-});
+observer1.observe(riseList1);
+
+//Observer 2: #rise-list2
+const riseList2 = document.querySelector('#rise-list2');
+const riseElements2 = document.querySelectorAll('#rise9, #rise10, #rise11, #rise12, #rise13, #rise14, #rise15, #rise16, #rise17, #rise18, #rise19, #rise20, #rise21, #rise22, #rise23, #rise24, #rise25');
+
+const observer2 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        riseElements2.forEach((element) => {
+            element.classList.add('animate');
+        });
+    } else {
+        riseElements2.forEach((element) => {
+            element.classList.remove('animate');
+        });
+    }
+}, { threshold: 0.5 });
+
+observer2.observe(riseList2);
+
+//Observer 3: #staggered-list
+const staggeredList = document.querySelector('#staggered-list');
+
+const observer3 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        entries[0].target.classList.add('animate');
+    }
+}, { threshold: 1.0 });
+
+observer3.observe(staggeredList);
