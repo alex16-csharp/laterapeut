@@ -311,3 +311,71 @@ const observer3 = new IntersectionObserver((entries) => {
 }, { threshold: 1.0 });
 
 observer3.observe(staggeredList);
+
+//Observer 4: #scaleFade1 
+const scaleFade1 = document.querySelector('#scaleFade1');
+const observer4 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        scaleFade1.classList.add('animate');
+    }
+}, { threshold: 1.0 });
+
+observer4.observe(scaleFade1);
+
+//Observer 5: #scaleFade2 
+const scaleFade2 = document.querySelector('#scaleFade2');
+const observer5 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        if (window.innerWidth < 800) {
+            setTimeout(() => {
+                scaleFade2.classList.add('animate');
+            }, 600); // add a 600ms delay
+        } else {
+            scaleFade2.classList.add('animate');
+        }
+    }
+}, { threshold: 1.0 });
+
+observer5.observe(scaleFade2);
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 800) {
+        scaleFade2.classList.remove('animate');
+        observer5.unobserve(scaleFade2);
+        observer5.observe(scaleFade2);
+    }
+});
+
+//Observer 6: #scaleFad3
+const scaleFade3 = document.querySelector('#scaleFade3');
+const observer6 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        scaleFade3.classList.add('animate');
+    }
+}, { threshold: 1 });
+
+observer6.observe(scaleFade3);
+
+//Observer 7: #scaleFade4
+const scaleFade4 = document.querySelector('#scaleFade4');
+const observer7 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        if (window.innerWidth < 800) {
+            setTimeout(() => {
+                scaleFade4.classList.add('animate');
+            }, 600); // add a 600ms delay
+        } else {
+            scaleFade4.classList.add('animate');
+        }
+    }
+}, { threshold: 1.0 });
+
+observer7.observe(scaleFade4);
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 800) {
+        scaleFade4.classList.remove('animate');
+        observer7.unobserve(scaleFade4);
+        observer7.observe(scaleFade4);
+    }
+});
