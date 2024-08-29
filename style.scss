@@ -6,15 +6,18 @@ $color-text-dark: #000;
 
 $color-grey: #f2f2f2;
 $color-dark-grey: #ddd;
-//color main
+
+//main colours
 $color-main: #000;
 $color-main-monochromatic: #333;
+
 $color-main-analogous: #f00;
-
 $color-blue: #3366cc;
-$color-dark-blue: #6147e4;
+$color-dark-blue: #6633cc;
+$color-green: #687b44;
+$color-green-monochromaticn: #7cbd02;
 
-
+//shadow variables
 $box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 $light-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 $heavy-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -800,10 +803,37 @@ body {
 
         ::marker {
             font-size: 1.2em;
-            color: $color-blue;
             display: inline-block;
+            color: $color-blue;
         }
     }
+
+    #list-red {
+        ::marker {
+            color: $color-main-analogous;
+        }
+    }
+
+
+    #list-blue {
+        ::marker {
+            color: $color-blue;
+        }
+    }
+
+    #list-green {
+        ::marker {
+            color: $color-gree-monochromaticn;
+        }
+    }
+
+    #list-purple {
+        ::marker {
+            color: $color-dark-blue;
+        }
+    }
+
+
 
 }
 
@@ -1217,7 +1247,7 @@ div.card-desc {
 
 .column-contact button {
     margin-top: 1.5rem;
-    background-color: #687b44;
+    background-color: $color-green;
     color: $color-text-light;
     width: 100%;
     font-size: 1rem;

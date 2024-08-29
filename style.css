@@ -696,8 +696,20 @@ body {
 }
 .column-middle .middle-list ::marker {
   font-size: 1.2em;
-  color: #3366cc;
   display: inline-block;
+  color: #3366cc;
+}
+.column-middle #list-red ::marker {
+  color: #f00;
+}
+.column-middle #list-blue ::marker {
+  color: #3366cc;
+}
+.column-middle #list-green ::marker {
+  color: #7cbd02;
+}
+.column-middle #list-purple ::marker {
+  color: #6633cc;
 }
 
 @keyframes fade-in {
