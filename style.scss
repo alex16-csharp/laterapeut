@@ -786,11 +786,13 @@ body {
 
     //svg animations
     img {
-        scale: .8;
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range: 250px 500px;
+        -webkit-animation: fade-in 2s linear forwards;
+        animation: fade-in 2s linear forwards;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
     }
 
     .middle-list {
@@ -823,7 +825,7 @@ body {
 
     #list-green {
         ::marker {
-            color: $color-gree-monochromaticn;
+            color: $color-green-monochromaticn;
         }
     }
 
@@ -837,9 +839,17 @@ body {
 
 }
 
+@-webkit-keyframes fade-in {
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 @keyframes fade-in {
     to {
-        scale: 1;
+        transform: scale(1);
         opacity: 1;
     }
 }
