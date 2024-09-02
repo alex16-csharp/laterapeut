@@ -273,109 +273,57 @@ document.querySelectorAll('ion-icon').forEach(icon => {
 //animation list
 //Observer 1: #rise-list1
 const riseList1 = document.querySelector('#rise-list1');
-const riseElements1 = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8');
-
-const observer1 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            riseElements1.forEach((element) => {
-                element.classList.add('animate');
-            });
-        }
-    });
-}, { threshold: 1.0 });
-
-observer1.observe(riseList1);
+if (riseList1) {
+    const riseElements1 = document.querySelectorAll('#rise1, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7, #rise8');
+    const observer1 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                riseElements1.forEach((element) => {
+                    element.classList.add('animate');
+                });
+            }
+        });
+    }, { threshold: 1.0 });
+    observer1.observe(riseList1);
+}
 
 //Observer 2: #rise-list2
 const riseList2 = document.querySelector('#rise-list2');
-const riseElements2 = document.querySelectorAll('#rise9, #rise10, #rise11, #rise12, #rise13, #rise14, #rise15, #rise16, #rise17, #rise18, #rise19, #rise20, #rise21, #rise22, #rise23, #rise24, #rise25');
-
-const observer2 = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        riseElements2.forEach((element) => {
-            element.classList.add('animate');
-        });
-    }
-}, { threshold: 0.5 });
-
-observer2.observe(riseList2);
+if (riseList2) {
+    const riseElements2 = document.querySelectorAll('#rise9, #rise10, #rise11, #rise12, #rise13, #rise14, #rise15, #rise16, #rise17, #rise18, #rise19, #rise20, #rise21, #rise22, #rise23, #rise24, #rise25');
+    const observer2 = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            riseElements2.forEach((element) => {
+                element.classList.add('animate');
+            });
+        }
+    }, { threshold: 0.5 });
+    observer2.observe(riseList2);
+}
 
 //Observer 3: #staggered-list
 const staggeredList = document.querySelector('#staggered-list');
-
-const observer3 = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        entries[0].target.classList.add('animate');
-    }
-}, { threshold: 1.0 });
-
-observer3.observe(staggeredList);
-
-//Observer 4: #scaleFade1 
-const scaleFade1 = document.querySelector('#scaleFade1');
-const observer4 = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        scaleFade1.classList.add('animate');
-    }
-}, { threshold: 1.0 });
-
-observer4.observe(scaleFade1);
-
-//Observer 5: #scaleFade2 
-const scaleFade2 = document.querySelector('#scaleFade2');
-const observer5 = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        if (window.innerWidth < 800) {
-            setTimeout(() => {
-                scaleFade2.classList.add('animate');
-            }, 600); // add a 600ms delay
-        } else {
-            scaleFade2.classList.add('animate');
+if (staggeredList) {
+    const observer3 = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            entries[0].target.classList.add('animate');
         }
-    }
-}, { threshold: 1.0 });
+    }, { threshold: 0.5 });
+    observer3.observe(staggeredList);
+}
 
-observer5.observe(scaleFade2);
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth < 800) {
-        scaleFade2.classList.remove('animate');
-        observer5.unobserve(scaleFade2);
-        observer5.observe(scaleFade2);
-    }
-});
-
-//Observer 6: #scaleFad3
-const scaleFade3 = document.querySelector('#scaleFade3');
-const observer6 = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        scaleFade3.classList.add('animate');
-    }
-}, { threshold: 1 });
-
-observer6.observe(scaleFade3);
-
-//Observer 7: #scaleFade4
-const scaleFade4 = document.querySelector('#scaleFade4');
-const observer7 = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        if (window.innerWidth < 800) {
-            setTimeout(() => {
-                scaleFade4.classList.add('animate');
-            }, 600); // add a 600ms delay
-        } else {
-            scaleFade4.classList.add('animate');
-        }
-    }
-}, { threshold: 1.0 });
-
-observer7.observe(scaleFade4);
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth < 800) {
-        scaleFade4.classList.remove('animate');
-        observer7.unobserve(scaleFade4);
-        observer7.observe(scaleFade4);
+//Observer 4: #scaleFade 
+const elementsToObserve = ['#scaleFade1', '#scaleFade2', '#scaleFade3', '#scaleFade4'];
+elementsToObserve.forEach((selector) => {
+    const element = document.querySelector(selector);
+    if (element) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 1.0 });
+        observer.observe(element);
     }
 });
