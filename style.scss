@@ -546,6 +546,9 @@ body {
 .row {
     width: 50%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row-contact {
@@ -576,6 +579,13 @@ body {
     .row,
     .row-contact {
         width: 70%;
+    }
+}
+
+/* For larger screens */
+@media only screen and (min-width: 1281px) {
+    .row {
+        width: 80%;
     }
 }
 

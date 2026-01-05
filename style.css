@@ -465,6 +465,9 @@ body {
 .row {
   width: 50%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .row-contact {
@@ -489,6 +492,12 @@ body {
   .row,
   .row-contact {
     width: 70%;
+  }
+}
+/* For larger screens */
+@media only screen and (min-width: 1281px) {
+  .row {
+    width: 80%;
   }
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
